@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visualização</title>
+    <base href=".">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="themes/default/style.min.css" />
+</head>
+
+<body>
+    
+    !!!Generate the div here!!!
+
+    <script src="jquery.min.js"></script>
+    <script src="jstree.min.js"></script>
+
+    <script>
+        $(function () {
+            // 6 create an instance when the DOM is ready
+            $('#jstree').jstree();
+            // 7 bind to events triggered on the tree
+            $('#jstree').on("changed.jstree", function (e, data) {
+                // console.log(data.selected);
+            });           
+        });
+    </script>
+</body>
+
+</html>
